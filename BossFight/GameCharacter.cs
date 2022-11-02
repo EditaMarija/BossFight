@@ -66,5 +66,11 @@ namespace BossFight
             int strength = n.Next(0, ogStrength + 1);
             ogStrength = strength;
         }
-    }
+
+        public void winnerAndLoser()
+        {
+            if (this.Health <= 0) { Console.WriteLine("You Lost!"); }
+            else { Console.WriteLine("Congratulations you won!"); }
+        }
+    } 
 }
